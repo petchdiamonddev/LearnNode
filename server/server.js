@@ -11,5 +11,5 @@ app.use(cors())
 readdirSync('./routes').map((r) => app.use('/api', require('./routes/' + r)))
 
 app.listen(port, () => {
-    console.log("server runing onPort");
+    console.log("server runing onPort " + port);
 })
